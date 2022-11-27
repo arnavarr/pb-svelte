@@ -1,0 +1,13 @@
+{
+  "singleQuote": true,
+  "trailingComma": "none",
+  "overrides": [
+    {
+      "files": "*.svelte",
+      "options": {
+        "plugins": ["prettier-plugin-svelte"]
+      }
+    }
+  ],
+  "pluginSearchDirs": ["."]
+}

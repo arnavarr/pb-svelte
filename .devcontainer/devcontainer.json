@@ -1,0 +1,25 @@
+{
+  "name": "PB Svelte",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "editorconfig.editorconfig",
+        "esbenp.prettier-vscode",
+        "svelte.svelte-vscode",
+        "ms-azuretools.vscode-docker"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "[svelte]": {
+          "editor.defaultFormatter": "svelte.svelte-vscode"
+        },
+        "svelte.enable-ts-plugin": true
+      }
+    }
+  },
+  "forwardPorts": [8080, 5173]
+}
